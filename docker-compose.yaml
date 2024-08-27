@@ -1,0 +1,10 @@
+version: '3'
+services:
+  website:
+    image: nginx:latest
+    container_name: website
+    volumes:
+      - D:/Projects/Resume Website/resume.html:/usr/share/nginx/html/index.html
+    ports:
+      - 80:80
+    restart: always
